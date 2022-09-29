@@ -1,0 +1,35 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lab05)
+```
+# About this package:
+
+This package contains the task of lab5 which implements the quotes generator API
+
+
+1. **fetchRandomQuote()**
+
+This function returns the list containing id, author name and random quote 
+
+2. **fetchAllQuotes()**
+
+This function returns the list containing id, author name and All quotes 
+
+3. **fetchQuoteByAuther()**
+
+This function returns the list containing id, author name and All quotes by that author 
