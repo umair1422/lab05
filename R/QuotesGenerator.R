@@ -6,9 +6,6 @@
 
 baseUrl <- "https://programming-quotes-api.herokuapp.com"
 
-#' @description
-#' This function generates random quote
-#' @return the list containing id,author's name and quote
 library(httr)
 library(jsonlite)
 fetchRandomQuote <- function() {
@@ -24,9 +21,6 @@ fetchRandomQuote <- function() {
 
 #fetchRandomQuote()
 
-#' @description
-#' This function generates all quotes
-#' @return the list containing id,author's name and quotes
 
 fetchAllQuotes <- function() {
   endPoint <- '/quotes'
@@ -39,9 +33,6 @@ fetchAllQuotes <- function() {
 
 #fetchAllQuotes()
 
-#' @description
-#' This function generates all quotes of specific author
-#' @return the list containing id,author's name and quotes
 fetchQuoteByAuther <- function(author) {
   if(is.character(author))
   {
