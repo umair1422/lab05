@@ -6,8 +6,11 @@
 
 baseUrl <- "https://programming-quotes-api.herokuapp.com"
 
-library(httr)
-library(jsonlite)
+#' Random quotes function
+#' @description
+#' This function generates random quote
+#' @return the list containing id,author's name and quote
+#' @export
 fetchRandomQuote <- function() {
 
   endPoint <- '/quotes/random'
@@ -21,7 +24,11 @@ fetchRandomQuote <- function() {
 
 #fetchRandomQuote()
 
-
+#' All quotes function
+#' @description
+#' This function generates all quotes
+#' @return the list containing id,author's name and quote
+#' @export
 fetchAllQuotes <- function() {
   endPoint <- '/quotes'
   randomQuote <- GET(url = paste0(baseUrl,endPoint))
@@ -32,6 +39,13 @@ fetchAllQuotes <- function() {
 }
 
 #fetchAllQuotes()
+
+#' All quotes by author name function
+#' @description
+#' This function generates all quotes of an author
+#' @param author name
+#' @return the list containing id,author's name and quote
+#' @export
 
 fetchQuoteByAuther <- function(author) {
   if(is.character(author))
@@ -49,5 +63,5 @@ fetchQuoteByAuther <- function(author) {
     }
 }
 
-fetchQuoteByAuther(author = 'Edsger%20W.%20Dijkstra')
+#fetchQuoteByAuther(author = 'Edsger%20W.%20Dijkstra')
 

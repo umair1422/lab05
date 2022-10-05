@@ -3,10 +3,9 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Imports: httr, jsonlite
-Author: Who wrote it
+Author: Umair, Usama
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package generates the quotations.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
